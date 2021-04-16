@@ -1,5 +1,6 @@
 #! python3
 # PWManager.py - A simple and insecure password manager. Can also become a copy and paste program
+# create a bat file in C:\<user>\ to run commands via win + R or run
 
 # TODO: enhance this to be useful drafting email responses.
 
