@@ -3,13 +3,13 @@
 
 import re
 
-#TODO: Read a text file.
+#Read a text file.
 
 madlibsfile = open('madlibs.txt')
 content = madlibsfile.read()
 
 textcontent = re.split(r'\W+', content)
-#TODO: Look for word ADJECTIVES,NOUN,ADVERB or VERB. Prompt user to replace occurences.
+#Look for word ADJECTIVES,NOUN,ADVERB or VERB. Prompt user to replace occurences.
 output = content
 
 for i in textcontent:
@@ -35,7 +35,7 @@ for i in textcontent:
         output = textRegex.sub(verb,output,1)
 
 
-#TODO: print the result in the screen and save to new text file.
+#print the result in the screen and save to new text file.
 newmadlibfile = open('newMadlib.txt', 'w')
 newmadlibfile.write(output)
 newmadlibfile.close
