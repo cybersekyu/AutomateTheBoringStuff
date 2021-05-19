@@ -13,7 +13,7 @@ for foldername, subfolders, filenames in os.walk(ThisFolder):
             fileto = foldername + '\\' + filename
             print('Moving... ' + fileto + ' to ' +  ThatFolder)
            
-#TODO: move the files to a specified new location
+# move the files to a specified new location
             shutil.move(fileto, ThatFolder)
 
 print('Finished.')
